@@ -3,7 +3,7 @@ from PIL import Image, ImageOps, ImageColor
 import numpy as np
 from rembg import remove
 
-st.title("Pixie-Palette-Transform-Your-Image-Backgrounds-with-Colorful-Magic")
+st.title("Pixie-Palette:Transform Your Image Backgrounds with Colorful Magic")
 
 # Upload an image in png, jpeg, or jpg format
 uploaded_file = st.file_uploader("Upload an image (png, jpeg, jpg)", type=["png", "jpeg", "jpg"])
