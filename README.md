@@ -27,6 +27,7 @@ This Streamlit app allows users to upload images and change their background col
 Run the following command in your terminal:
 ```bash
 streamlit run app.py
+```
 
 
 ## How to Use
