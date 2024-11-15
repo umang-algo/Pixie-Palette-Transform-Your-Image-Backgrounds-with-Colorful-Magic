@@ -37,14 +37,14 @@ View the original and modified images side by side.
 Download the modified image by clicking the "Download Modified Image" button.
 
 ## Technologies Used
--**Streamlit**: For building the web app interface.
--**Pillow (PIL)**: For image processing and manipulation.
--**rembg**: For efficient and accurate background removal.
--**NumPy**: For array manipulation.
+- **Streamlit**: For building the web app interface.
+- **Pillow (PIL)**: For image processing and manipulation.
+- **rembg**: For efficient and accurate background removal.
+- **NumPy**: For array manipulation.
 
 ## Files in the Repository
-**app.py**: The main script for running the Streamlit app.
-**requirements.txt** : Contains a list of all the dependencies needed for the app.
+- **app.py**: The main script for running the Streamlit app.
+- **requirements.txt** : Contains a list of all the dependencies needed for the app.
 
 ## Contributing
 
