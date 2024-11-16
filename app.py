@@ -2,9 +2,9 @@ import streamlit as st
 from PIL import Image, ImageOps, ImageColor, ImageFilter
 import numpy as np
 from rembg import remove
+from io import BytesIO
 
-
-st.title("Pixie-Palette:Transform Your Image Backgrounds with Colorful Magic")
+st.title("Pixie-Palette: Transform Your Image Backgrounds with Colorful Magic")
 
 # Upload an image in png, jpeg, or jpg format
 uploaded_file = st.file_uploader("Upload an image (png, jpeg, jpg)", type=["png", "jpeg", "jpg"])
@@ -64,12 +64,17 @@ if uploaded_file is not None:
         with col2:
             st.image(modified_image, caption="Modified Image", use_container_width=True)
 
-        # Option to download the modified image
+        # Convert the modified image to a byte stream in JPEG format
+        buffer = BytesIO()
+        modified_image.convert("RGB").save(buffer, format="JPEG", quality=95)
+        buffer.seek(0)
+
+        # Option to download the modified image as JPEG
         st.download_button(
             label="Download Modified Image",
-            data=modified_image.tobytes("raw", "RGBA"),
-            file_name="modified_image.png",
-            mime="image/png"
+            data=buffer,
+            file_name="modified_image.jpg",
+            mime="image/jpeg"
         )
     else:
         st.warning("Please upload a background image for the 'Image' option.")
