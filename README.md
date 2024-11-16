@@ -1,6 +1,7 @@
 # Pixie-Palette-Transform-Your-Image-Backgrounds-with-Colorful-Magic
 
-![Uploading Image20241116172619.png…]()
+<img width="543" alt="Image20241116172619" src="https://github.com/user-attachments/assets/01435d9a-45eb-4461-adf9-d158675c2ea7">
+
 
 
 ## Overview
