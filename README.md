@@ -1,5 +1,8 @@
 # Pixie-Palette-Transform-Your-Image-Backgrounds-with-Colorful-Magic
 
+![Uploading Image20241116172619.png…]()
+
+
 ## Overview
 This Streamlit app allows users to upload images and change their background color easily. Whether you're looking to remove the background or replace it with a new color of your choice, this app handles it seamlessly using advanced libraries like `rembg` and `Pillow`.
 
